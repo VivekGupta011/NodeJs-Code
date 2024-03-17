@@ -3,7 +3,7 @@ const express=require("express");
 const app=express();
 const cors = require("cors"); // Import the cors middleware
 const userRouter = require("./routes/userRouter");
-const noteRouter = require("./routes/eventRouter");
+const eventRouter = require("./routes/eventRouter");
 const mongoose=require("mongoose");
 
 // Use cors middleware to allow requests from all origins
@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/users",userRouter);
-app.use("/event",noteRouter);
+app.use("/event",eventRouter);
 
 app.get("/",(req,res)=>{
     res.send("Hello Vivekk!")
