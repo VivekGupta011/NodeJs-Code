@@ -19,7 +19,7 @@ app.get("/",(req,res)=>{
     res.send("Hello Vivekk!")
 })
 
-// mongoose.connect("mongodb+srv://viveksite01:ADMIN@cluster0.vqcq9c2.mongodb.net/?retryWrites=true&w=majority")
+
 mongoose.connect("mongodb+srv://vivekgupta987699:agHOVzIFmMaIOsqL@cluster0.zuddzcm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 .then(()=>{
